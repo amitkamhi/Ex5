@@ -4,4 +4,7 @@
     <string name="layout2">this layout is prepared beforehand but loaded in run - time</string>
     <string name="r1">Radio1</string>
     <string name="r2">Radio2</string>
+    <string name="intro1">this layout is totally prepared during run-time</string>
+    <string name="first">first</string>
+    <string name="second">second</string>
 </resources>
