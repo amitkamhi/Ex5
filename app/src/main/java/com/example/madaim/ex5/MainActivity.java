@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final RelativeLayout mainLayout =(RelativeLayout) findViewById(R.id.mainLayout);
         LinearLayout layoutFromXML =(LinearLayout) LayoutInflater.from(this).inflate(R.layout.layout2, mainLayout, false);
-        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, toPixels(350));
+        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, toPixels(200));
         rlp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
        // rlp.setMargins(0,);
         mainLayout.addView(layoutFromXML, rlp);
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         layout1.setBackgroundResource(R.drawable.border);
         rlp = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, toPixels(200));
         rlp.addRule(RelativeLayout.BELOW, R.id.textView);
-        rlp.setMargins(0, toPixels(70), 0, 0);
+        rlp.setMargins(0, toPixels(30), 0, 0);
         mainLayout.addView(layout1, rlp);
 
         TextView intro = new TextView(this);
